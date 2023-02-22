@@ -1,14 +1,12 @@
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import static io.restassured.RestAssured.given;
-
+import org.hamcrest.CoreMatchers;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
+import static io.restassured.RestAssured.given;
 import static java.net.HttpURLConnection.HTTP_OK;
-
-import org.hamcrest.CoreMatchers;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 

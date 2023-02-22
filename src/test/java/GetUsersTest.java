@@ -1,18 +1,16 @@
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import static io.restassured.RestAssured.given;
-
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
-import static java.net.HttpURLConnection.HTTP_OK;
-
 import java.util.List;
 
-import static org.hamcrest.Matchers.*;
+import static io.restassured.RestAssured.given;
+import static java.net.HttpURLConnection.HTTP_OK;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.hasItems;
 
 public class GetUsersTest {
     Response response;
